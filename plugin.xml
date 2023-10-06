@@ -53,7 +53,7 @@
               <source url="https://cdn.cocoapods.org/"/>
           </config>
           <pods use-frameworks="true">
-              <pod name="OpenTok" spec="2.19.0" />
+              <pod name="OpenTok" spec="2.22.3" />
           </pods>
       </podspec>
 
