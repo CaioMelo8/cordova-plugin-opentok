@@ -40,7 +40,6 @@
 
     <!-- ios -->
     <platform name="ios">
-      <hook type="before_plugin_install" src="scripts/downloadiOSSDK.js" />
       <asset src="www/opentok.js" target="opentok.js" />
 
       <header-file src="src/ios/UIView+Category.h" />
@@ -48,30 +47,15 @@
       <header-file src="src/ios/OpenTokPlugin.h" />
       <source-file src="src/ios/OpenTokPlugin.m" />
 
-      <framework src="libstdc++.dylib" />
-      <framework src="libc++.dylib" />
-      <framework src="libxml2.dylib" />
-      <framework src="libsqlite3.dylib" />
-      <framework src="libpthread.dylib" />
-      <framework src="VideoToolbox.framework" />
-      <framework src="src/ios/OpenTok.framework" custom="true" />
-      <framework src="AudioToolbox.framework" />
-      <framework src="CoreData.framework" />
-      <framework src="AVFoundation.framework" />
-      <framework src="CoreGraphics.framework" />
-      <framework src="CoreMedia.framework" />
-      <framework src="CoreVideo.framework" />
-      <framework src="OpenGLES.framework" />
-      <framework src="SystemConfiguration.framework" />
-      <framework src="CoreTelephony.framework" />
-      <framework src="GLKit.framework" />
-      <framework src="EventKit.framework" />
-      <framework src="QuartzCore.framework" />
-      <framework src="MapKit.framework" />
-      <framework src="UIKit.framework" />
-      <framework src="Foundation.framework" />
-      <framework src="Security.framework" />
-      <framework src="CFNetwork.framework" />
+      <!-- Opentok native iOS SDK -->
+      <podspec>
+          <config>
+              <source url="https://cdn.cocoapods.org/"/>
+          </config>
+          <pods use-frameworks="true">
+              <pod name="OpenTok" spec="2.19.0" />
+          </pods>
+      </podspec>
 
       <!-- Add support for background audio to the plist -->
       <!-- https://tokbox.com/developer/sdks/ios/background-state.html -->
