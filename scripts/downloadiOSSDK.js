@@ -6,7 +6,7 @@ const util = require("util");
 const exec = util.promisify(require("child_process").exec);
 
 module.exports = async function () {
-  const iOSSdk = `OpenTok-iOS-2.22.3`;
+  const iOSSdk = `OpenTok-iOS-2.27.2`;
   const iOSSdkUrl = `https://s3.amazonaws.com/artifact.tokbox.com/rel/otkit-ios-sdk-xcframework/${iOSSdk}.zip`;
   const iOSSdkSourceDir = "./OpenTok.xcframework";
   const iOSSdkDestDir = `./plugins/cordova-plugin-opentok/src/ios/`;
