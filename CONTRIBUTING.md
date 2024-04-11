@@ -37,8 +37,6 @@ If the contribution doesn't meet these criteria, a maintainer will discuss it wi
 
 ## Development Guidelines
 
-1. Run `npm install` to install the necessary grunt files.
-2. Run `grunt watch` to run grunt tasks automatically after modifying files. This compiles the coffee files to JS and concatenates them.
-3. Modify JS components in `src/js/`.
-4. Modify iOS components in `src/ios/`.
-5. Modify Android components in `src/android/`.
+1. Modify JS components in `www/opentok/`.
+2. Modify iOS components in `src/ios/`.
+3. Modify Android components in `src/android/`.
