@@ -1,27 +1,16 @@
 {
   "name": "cordova-plugin-opentok",
-  "version": "3.5.1",
+  "version": "3.6.0",
   "description": "Add live video streaming to your Cordova Application",
   "cordova": {
     "id": "cordova-plugin-opentok",
     "platforms": [
       "android",
-      "ios",
-      "browser"
+      "ios"
     ]
   },
-  "dependencies": {
-    "@opentok/client": "2.22.5",
-    "exec": "^0.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-coffee": "^0.10.1",
-    "grunt-contrib-concat": "^0.4.0",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-nodeunit": "~0.3.3",
-    "grunt-contrib-uglify": "~0.4.0",
-    "grunt-contrib-watch": "~0.6.1",
     "q": "^1.5.1"
   },
   "repository": {
@@ -33,8 +22,7 @@
     "tokbox",
     "ecosystem:cordova",
     "cordova-android",
-    "cordova-ios",
-    "cordova-browser"
+    "cordova-ios"
   ],
   "author": "Manik Sachdeva",
   "license": "MIT",

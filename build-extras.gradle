@@ -6,5 +6,5 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.opentok.android:opentok-android-sdk:2.22.3'
+    implementation 'com.opentok.android:opentok-android-sdk:2.27.1'
 }
