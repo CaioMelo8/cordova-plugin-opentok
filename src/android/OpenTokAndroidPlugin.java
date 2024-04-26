@@ -980,7 +980,7 @@ public class OpenTokAndroidPlugin extends CordovaPlugin
                     JSONObject payload = new JSONObject();
                     try {
                         payload.put("platform", "Android");
-                        payload.put("cp_version", "3.6.0");
+                        payload.put("cp_version", "3.6.1");
                     } catch (JSONException e) {
                         Log.i(TAG, "Error creating payload json object");
                     }
